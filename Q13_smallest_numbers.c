@@ -6,13 +6,10 @@ int main() {
     printf("Enter two numbers: ");
     scanf("%f%f", &num1, &num2);
 
-    if (num1 < num2) {
-        printf("First number is smaller.\n");
-    } else if (num1 > num2) {
-        printf("Second number is smaller.\n");
-    } else {
-        printf("The numbers are equal.");
-    }
+    // Using ternary operator for each condition
+    (num1 < num2) ? printf("First number is smaller.\n") :
+    (num1 > num2) ? printf("Second number is smaller.\n") :
+                    printf("The numbers are equal.\n"); // Added \n for consistency
 
     return 0;
 }
